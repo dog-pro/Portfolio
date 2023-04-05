@@ -1,66 +1,304 @@
 @charset "UTF-8";
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, 'Droid Sans', sans-serif;
+}
+
 /* header */
-header{
+
+/* nav */
+.p-nav_pc{
+  min-width: 1174px;
+  height: 70px;
+  padding: 20px 5px;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  /*以下position:fixedによる崩れ修正*/
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.p-nav__left a{
+  display: flex;
+  margin: 16px 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.p-nav__left a:hover{
+  opacity: 0.7;
+}
+
+.p-nav__left img{
+  width: 100px;
+  height: 24px;
+}
+
+.p-nav__left a > p{
+  margin: 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.p-nav__sp{
+  display: none;
+}
+
+/* middle */
+/* middleはdropDown.cssに記載 */
+
+/* right */
+/* rightはdropDown.cssに記載 */
+
+/* main */
+.p-title{
+  /* margin-bottom: 30px; */
+  text-align: center;
+}
+
+.p-title > img{
+  width: 30px;
+  height: 30px;
+}
+
+.p-title > h2{
+  margin-top: 25px;
+  font-size:25px;
+  font-weight: normal;
+  color: #535354;
+  text-align: center;
+  letter-spacing: 0.05em
+}
+
+.p-title > p{
+  margin: 15px 0 40px;
+  font-size: 12px;
+  color: #a8a9a9;
+}
+
+/* ピックアップ */
+.p-pickup{
+  background-color: #e0f1fc;
+  padding: 60px 0 90px;
+}
+
+/* スライダー */
+/* 内容はslick__others.cssに記載 */
+
+/* 時間・料金・アクセス */
+
+
+/* 展示・館内紹介 */
+.p-exhibition{
+  padding: 130px 0px;
+  background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/exibition.jpg");
+  position: relative;     
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  /* flex: 1; */
+}
+
+/* 青ボタン */
+.c-blueBtn{
+  width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.c-blueBtn__list:hover{
+  opacity: 0.7;
+}
+
+.c-blueBtn__contents{
+  font-size: 20px;
+  color: white;
+}
+
+.c-blueBtn__icon{
+  width: 50px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* 常設展示 */
+.c-blueBtn1{
+  width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.c-blueBtn1__list{
   width: 100%;
-  height: 250px;
-  background-color: yellow;
+  background-color: #5d7dbf;
+  margin: 0px 10px 20px;
+  padding: 35px 0 40px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.c-blueBtn1__list::after{
+  background-color: #5471ad;
+  width: 100%;
+  height: 6px;
+  content: "";
+}
+
+.c-blueBtn1__list:hover{
+  opacity: 0.7;
+}
+
+.c-blueBtn1__contents{
+  font-size: 20px;
+  color: white;
+}
+
+.c-blueBtn1__icon{
+  width: 50px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* subInformation */
+.p-subInformation{
+  padding: 90px 0;
+  align-items: center;
+}
+
+.p-subInformation__container{
+  /* width: 540px; */
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.p-subInformation__container > li{
+  width: 250px;
+  background-color: #f2f2f2;
+  margin: 0 10px 20px;
+  padding: 35px 0 40px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid #e4e2e2;
+  cursor: pointer;
+}
+
+.p-subInformation__container > li::after{
+  background-color: #5471ad;
+  width: 100%;
+  height: 6px;
+  content: "";
+}
+
+.p-subInformation__container > li:hover{
+  opacity: 0.7;
+}
+
+.p-subInformation__container > li > a > p{
+  color: #5471ad;
+  margin-top: 10px;
+}
+
+.p-subInformation__icon{
+  width: 50px;
+  height: 40px;
+}
+
+/* イベント&スクール */
+/* 内容はslick__others.cssに記載 */
+
+/* ブログ海遊館日記 */
+/* 内容はslick__others.cssに記載 */
+
+/* 公式SNS */
+.p-officialSNS{
+  padding: 65px 0;
+  background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/fishSchool.jpg");
+  position: relative;     
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.p-officialSNS__img{
+  width: 100%;
+  height: 100px;
+  filter: blur(3px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/fishSchool.jpg"); */
+}
+
+.p-officialSNS__iconContainer{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.p-officialSNS__iconContainer a{
+  margin-left: 5px;
+}
+
+.p-officialSNS__icon{
+  width: 70px;
+  height: 70px;
+}
+
+.p-officialSNS__icon:hover{
+  opacity: 0.5;
+}
+
+.p-youtube{
+  text-align: center;
+}
+
+.p-youtube iframe{
+  border-radius: 10px;
+}
+
+
+/* PC style */
+@media screen and (min-width: 769px) {
+body{
+  min-width: 1174px;
 }
 
 /* nav */
-.p-nav{
-width: 100%;
-height: 70px;
-position: fixed;
-background-color: aqua;
-display: flex;
-justify-content: space-evenly;
-z-index: 2;
+.p-hamburger{
+  display: none;
 }
-
-.p-nav__middleContainer{
-  display: flex;
-  list-style: none;
-}
-
-.p-nav__middleList{
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-.p-nav__middleImg{
-
-}
-
-.p-nav__rightContainer{
-}
-
-.p-nav__rightTop{
-  display: flex;
-  list-style: none;
-}
-
-.p-nav__rightTop__list{
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-.p-nav__rightBottom{}
-
-
-
-/* openHour */
 
 
 /* attention */
-.p-attention{
-background-color: white;
-padding: 10px;
+.p-attention__sp{
+  display: none;
+}
+
+.p-attention__pc{
+  width: 100%;
+  background-color: white;
+  padding: 10px;
 }
 
 .p-attention__container{
-text-align: center;
-border:5px solid #5d7dbf;
-padding: 20px;
+  margin: 0 auto;  
+  border:5px solid #5d7dbf;
+  padding: 20px;
+  text-align: center;
 }
 
 .p-attention__list{
@@ -68,104 +306,97 @@ padding: 20px;
   margin-bottom: 10px;
 }
 
-.p-attention__button{
+/* .p-attention__button{
   width: 150px;
   height: 27px;
-  background-color: #5471ad;
+  background: #5d7dbf;
   color: white;
-  padding: 5px 25px;
+  padding: 5px 27px;
+  font-size: 80%;
   cursor: pointer;
+  display: inline-block;
 }
 
 .p-attention__button:hover{
   opacity: 0.7;
-}
-
-/* main */
-/* main{
-  width: 960px;
-  margin: 200px auto;
 } */
-
-.p-title{
-  height: 100px;
-  text-align: center;
-}
-
-.p-title > h2{
-  color: #535354;  
-}
-
-.p-title > p{
-  color: #a8a9a9;
-}
-
-.p-title__image{
-  width: 40px;
-  height: 40px;
-}
-
-
-/* ピックアップ */
-.p-pickup{
-  background-color: #e0f1fc;
-  padding: 70px 0;
-}
-
-.p-title{
-  padding: 70px 0;
-  text-align: center;
-}
-
-.p-title__image{
-  width: 40px;
-  height: 40px;
-}
-
-.p-title__japanese{
-  color: #535354;
-}
-
-.p-title__english{
-  color: #a8a9a9;
-}
-
-/* スライダー */
-.c-slider{
-  width: 960px;
-  height: 325px;
-  display: flex;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.c-slider > li{
-width: 33.3%;
-}
 
 /* ニュース */
 .p-news{
   margin:  0 auto;
-  padding-bottom: 70px;
+  padding: 65px 0 80px;
 }
 
+.p-news__list{
+  position: absolute;
+  left: 50%;
+  top: 160px;
+  margin-left: 368px;
+}
+
+.p-news__list a{
+  display: block;
+  width: 64px;
+  height: 26px;
+  box-sizing: border-box;
+  background-color: #5d7dbf;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/* .p-news__list a::after{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+  vertical-align: middle;
+  border-radius: 50%;
+  content: "→";
+} */
+
 .p-scroll{
-  width: 960px;
+  width: 830px;
   margin:40px auto 0;
   height: 180px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
+/* スクロール幅の設定 */
+.p-scroll::-webkit-scrollbar{
+  width: 6px;
+}
+
+/* スクロールの背景の設定 */
+.p-scroll::-webkit-scrollbar-track{
+  background-color: #e5e5e5;
+  border-radius: 5px;
+}
+
+/* ドラックできるスクロール部の設定 */
+.p-scroll::-webkit-scrollbar-thumb{
+  background: #5d7dbf;
+  border-radius: 5px;
+}
+
 .p-scroll > li{
   list-style: none;
   padding: 8px 0;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.p-scroll > li > a:hover{
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .p-scroll > li > a{
+  color: #5d7dbf;
   display: flex;
-  /* line-height: 1.5; */
+  letter-spacing: 0.2em;
 }
 
 .p-scroll__date{
@@ -177,16 +408,17 @@ width: 33.3%;
   font-size: 14px;
 }
 
-.p-scroll__script::before{
+.p-scroll__news::before{
   background-color: #e7a844;
   color: white;
   content: "ニュース";
+  height: 20px;
   margin-right: 10px;
   padding: 3px 10px;
   font-size: 13px;
 }
 
-.p-scroll > li:nth-child(1).p-scroll__script::before{
+.p-scroll__recruite::before{
   background-color: #ee8888;
   color: white;
   content: "参加者募集";
@@ -195,19 +427,28 @@ width: 33.3%;
   font-size: 13px;
 }
 
+.p-scroll__creature::before{
+  background-color: #2ea0df;
+  color: white;
+  content: "生きもの情報";
+  margin-right: 10px;
+  padding: 3px 10px;
+  font-size: 13px;
+}
+
 /* ・・・ */
 .p-middle{
-  width: 100%;
-  /* display: flex; */
-  justify-content:space-between;
+  display: flex;
   flex-wrap: wrap;
+}
+
+.p-middle section{
+  width: 50%;
 }
 
 /* 時間・料金・アクセス */
 .p-time{
-  width: 100%;
-  height: 70vh;
-  padding: 130px 20px 130px 0px;
+  padding: 130px 0px;
   background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/time.jpg");
   background-position: center;
   align-items: center;
@@ -226,210 +467,29 @@ width: 33.3%;
   z-index: -1;
 }
 
-/* 展示・館内紹介 */
-.p-exhibition{
-  width: 100%;
-  height: 70vh;
-  padding: 130px 20px 130px 0px;
-  background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/exibition.jpg");
-  position: relative;     
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  /* flex: 1; */
-}
-
-.p-exhibition::before{ /*背景画像の疑似要素にぼかしを*/
-  background: inherit; /*親要素を継承*/ 
-  content: '';
-  position: absolute;/*ぼかし*/
-  filter: blur(5px);
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  z-index: -1;
-}
-
-/* 青ボタン */
-.c-blueBtn{
-  width: 540px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
 .c-blueBtn__list{
-width: 250px;
-/* height: 140px; */
-background-color: #5d7dbf;
-margin: 5px;
-padding: 35px 0 40px;
-text-align: center;
-text-decoration: none;
-list-style: none;
-cursor: pointer;
-}
-
-.c-blueBtn__list::after{
-  background-color: #5471ad;
-  width: 100%;
-  height: 6px;
-  content: "";
-}
-
-.c-blueBtn__list:hover{
-opacity: 0.7;
-}
-
-.c-blueBtn__contents{
-  color: white;
-}
-
-.c-blueBtn__icon{
-  width: 50px;
-  height: 40px;
-}
-
-/* 常設展示 */
-.c-blueBtn1{
-  width: 540px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.c-blueBtn1__list{
-width: 100%;
-/* height: 140px; */
-background-color: #5d7dbf;
-margin: 5px;
-padding: 35px 0 40px;
-text-align: center;
-text-decoration: none;
-list-style: none;
-cursor: pointer;
-}
-
-.c-blueBtn1__list::after{
-  background-color: #5471ad;
-  width: 100%;
-  height: 6px;
-  content: "";
-}
-
-.c-blueBtn1__list:hover{
-opacity: 0.7;
-}
-
-.c-blueBtn1__contents{
-  color: white;
-}
-
-.c-blueBtn1__icon{
-  width: 50px;
-  height: 40px;
-}
-
-/* subInformation */
-.p-subInformation{
-  max-width: 960px;
-  padding: 90px 0;
-  display: flex;
+  width: 250px;
+  background-color: #5d7dbf;
+  margin: 0px 10px 20px;
+  padding: 35px 0 40px;
   text-align: center;
-  margin: 0 auto;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
 }
 
-.p-subInformation > li{
-width: 250px;
-/* height: 145px; */
-background-color: #f2f2f2;
-margin: 0 10px;
-padding: 35px 0 40px;
-text-align: center;
-text-decoration: none;
-list-style: none;
-border: 1px solid #e4e2e2;
-cursor: pointer;
-}
-
-.p-subInformation > li::after{
-  background-color: #5471ad;
-  width: 100%;
-  height: 6px;
-  content: "";
-}
-
-.p-subInformation > li:hover{
-opacity: 0.7;
-}
-
-.p-subInformation > li > a > p{
-  color: #5471ad;
-}
-
-.p-subInformation__icon{
-  width: 50px;
-  height: 40px;
-}
-
-/* 公式SNS */
-.p-officialSNS{
-  height: 70vh;
-  padding: 65px 0;
-  background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/fishSchool.jpg");
-  position: relative;     
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-
-.p-officialSNS::before{ /*背景画像の疑似要素にぼかしを*/
-  background: inherit; /*親要素を継承*/ 
-  content: '';
-  position: absolute;/*ぼかし*/
-  filter: blur(5px);
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  z-index: -1;
-}
-
-.p-officialSNS__img{
-  width: 100%;
-  height: 100px;
-  filter: blur(3px);
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/fishSchool.jpg"); */
-}
-
-.p-officialSNS__iconContainer{
-  text-align: center;
-}
-
-.p-officialSNS__icon{
-  width: 70px;
-  height: 70px;
-}
-
-.p-officialSNS__icon:hover{
-  opacity: 0.5;
-}
+/* 展示・館内紹介 */
 
 /* その他 */
 .p-others{
+  position: relative;
   margin: auto;
-  padding: 50px 0;
+  padding: 55px 0 70px 0;
   background-color: #f4f4f4;
 }
 
-.p-others__container{
+.p-others > ul{
+  /* position: relative; */
   width: 960px;
   margin: 0 auto;
   display: flex;
@@ -438,108 +498,217 @@ opacity: 0.7;
   text-decoration: none;
 }
 
-.p-others__list{
-width: 200px;
-height: 200px;
-margin: 15px;
-padding-top: 20px;
-list-style: none;
-text-decoration: none;
-background-color: white;
-border: 1px solid #c5d0e4;
+.p-others > ul > li{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 20px 20px 0;
+  padding-top: 20px;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #c5d0e4;
 }
 
-a{
+.p-others > ul > li > a{
+  display: block;
+  position: relative;
+  list-style: none;
   text-decoration: none;
-  color: #5e7dbe;}
+  color: #5e7dbe;
+}
 
-.p-others__list:hover{
+.p-others p{
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+}
+
+.p-others > ul > li:hover{
   opacity: 0.5;
 }
 
-.p{
-
+.p-others > ul > li:nth-child(4){
+  margin-right: 0;
 }
 
-.p-others__img{
-width: 50px;
-height: 50px;
-margin-top: 10px;
+.p-others > ul > li:nth-child(8){
+  margin-right: 0;
 }
 
 .p-others__title{
   display: block;
   font-size: 13px;
   font-weight: bold;
+  line-height: 1.5;
+}
+
+.p-others__img{
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 20px;
+}
+
+.p-others__link{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  right: 2px;
+  bottom: 2px;
 }
 
 .c-sitemap{
+  display: flex;
   position: absolute;
-  left: 0;
+  left: -10;
   bottom: 0;
-  width: 100px;
+  width: 105px;
   height: 30px;
   background-color: #fea8a8;
   color: #fff;
   font-size: 12px;
   cursor: pointer;
+  align-items: center;
+}
+
+.c-sitemap::after{
+  background-color: white;
+  color: #fea8a8;
+  content: "↓";
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  border-radius: 50%;
+  font-weight: bold 3px;
+}
+
+.c-sitemap p{
+display: block;
+text-align: left;
+padding-left: 5px;
+}
+
+/* sitemap */
+.p-sitemap{
+  text-align: left;
+  display: none;
+  background-color: #5d7dbf;
+  padding: 40px 0;  
+  color: white;
+}
+
+.p-sitemap__container{
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-sitemap__list{
+  text-align: left;
+  width: 25%;
+  margin-top: 50px;
+}
+
+.p-sitemap__list > li{
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.p-sitemap__list li > ul > li{
+  margin-top: 5px;
+}
+
+.p-sitemap__list a{
+  cursor: pointer;
+}
+
+.p-sitemap__list a:hover{
+  opacity: 0.7;
+}
+
+.p-sitemap__list p{
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.p-sitemap__list img{
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
 }
 
 /* footer */
 .l-footer{
   background-color: #5d7dbf;
   text-align: center;
-  }
-  
-  .l-footer__container{
-    width: 960px;
-    margin: 0 auto;
-    padding: 35px 0;
-    text-align: center;
-  }
-  
-  .p-footer__sns{
+}
+
+.l-footer__container{
+  width: 960px;
+  margin: 0 auto;
+  padding: 35px 0;
+  text-align: center;
+}
+
+.p-footer__sns{
   display: flex;
   list-style: none;
   margin: 0 auto;
   justify-content: center;
-  }
-  
-  .p-footer__img{
-    width: 40px;
-    height: 40px;
-    margin: 0 5px;
-  }
+}
 
-  .p-footer__img:hover{
-    opacity: 0.5;
-  }
-  
-  .p-footer__nav{
-    display: flex;
-    list-style: none;
-  }
-  
-  .p-footer__list{
-  text-decoration: none;
+.p-footer__img{
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.p-footer__img:hover{
+  opacity: 0.5;
+}
+
+.p-footer__nav{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 35px 0 25px;
+}
+
+.p-footer__nav > li{
   border-left: 2px solid #fff;
   padding: 0 10px;
-  color: #fff;
   font-weight: bold;  
   margin: 0 3px;
-  }
+}
 
-  .p-footer__list:hover{
-    opacity: 0.5;
-  }
-  
-  .l-small{
-    color: #fff;
-  }
-  
+.p-footer__nav > li:first-child{
+  border: none;
+}
 
-/* PC style */
-@media screen and (min-width: 769px) {}
+.p-footer__nav a {
+  font-size: 13px;
+  text-decoration: none;
+  color: white
+}
 
-  /* SP style */
-  @media screen and (max-width: 768px){}
+.p-footer__nav > li:hover{
+  opacity: 0.5;
+}
+
+.l-small{
+  color: #fff;
+  font-size:11px; 
+  font-family: 
+  -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, 'Droid Sans', sans-serif;
+}
+
+.c-sitemap__sp{
+  display: none;
+}
+
+}
+
+

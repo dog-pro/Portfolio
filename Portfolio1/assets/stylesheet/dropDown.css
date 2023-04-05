@@ -1,0 +1,186 @@
+
+/* PC style */
+@media screen and (min-width: 769px) {
+.p-nav__middle{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+}
+
+.p-nav__middle li{
+  border-left: 1px solid #cccccc;
+  margin: 0 7px;
+}
+
+.p-nav__middle a{
+  margin-left: 10px;
+  text-decoration: none;
+  list-style: none;
+  color: #535354;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.p-nav__middle li:first-child{
+  border-left: none;
+}
+
+.p-nav__middle > li > a:hover{
+  opacity: 0.7;
+}
+
+.p-nav__middle img{
+  width: 23px;
+  height: 23px;
+}
+
+/* navの動きに関係するCSS ドロップダウンメニュー用のCSS */
+.p-nav__middleSub{
+  list-style: none;
+  background-color: white;
+  position: absolute;/*subメニューを消す*/
+  display: none;/*subメニューを消す */
+}
+
+.p-nav__middleSub li{
+  width: 180px;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  border-left: none;
+  border-bottom: solid 0.2px #5d7dbf;
+}
+
+.p-nav__middleSub a{
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #5d7dbf;
+}
+
+.p-nav__middleSub a:hover{
+  opacity: 0.7;
+}
+
+.p-nav__middleSub li:last-child{
+  border: none;
+}
+
+.p-nav__middle li .open {
+  display: block;
+}
+
+/* right */
+.p-nav__rightContainer{
+  line-height: 20px;
+  text-align: right;
+}
+
+.p-nav__rightContainer a:hover{
+  opacity: 0.7;
+}
+
+.p-nav__rightTop{
+  display: flex;
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.p-nav__rightTop li{
+  padding-right: 8px;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.p-nav__rightTop li:hover{
+  background-color: #dcdcdc;
+}
+
+.p-nav__rightTop p{
+  font-size: 12px;
+}
+
+.p-nav__rightTop p::after{
+  margin-left: 5px;
+  content: "▼";
+}
+
+.p-nav__rightTop a{
+  display: flex;
+}
+
+.p-nav__rightTop img{
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+.p-nav__search{
+  border-left: solid 1px #cccccc;
+  padding-left: 8px;
+}
+
+.p-nav__rightBottom a{
+  font-size: 12px;
+}
+
+.p-nav__rightBottom > a > img{
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+/* navの動きに関係するCSS ドロップダウンメニュー用のCSS */
+.p-nav__rightSub{
+  list-style: none;
+  background-color: #dcdcdc;
+  padding: 8px 0;
+  position: absolute;/*subメニューを消す*/
+  display: none;/*subメニューを消す */
+}
+
+.p-nav__rightSub li{
+  width: 90px;
+  text-align: center;
+  align-items: center;
+  background-color: #dcdcdc;
+  color: #5d7dbf;
+  border-left: none;
+}
+
+.p-nav__rightSub a{
+  padding: 5px 0;
+  font-size: 12px;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  border-left: none;
+}
+
+.p-nav__rightSub li:hover{
+  opacity: 0.7;
+  background-color: #dcdcdc;
+}
+
+.p-nav__rightSub img{
+  width: 35px;
+  height: 35px;
+}
+
+.p-nav__rightTop li .open {
+  display: block;
+}
+}
+
+/* SP style */
+@media screen and (max-width: 768px){
+  .p-nav_pc{
+    display: none;
+  }
+
+  
+}

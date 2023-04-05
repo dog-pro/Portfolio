@@ -1,0 +1,539 @@
+/* SP style */
+@media screen and (max-width: 768px){
+
+  body{
+    /* background-color: #5d7dbf; */
+  }
+
+  .p-nav_pc{
+    display: none;
+  }
+
+  .p-nav__sp{
+  width: 100vw;
+  height: 79px;
+  padding: 10px;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+/* left */
+.p-nav__leftSP{
+  display: flex;
+}
+
+.p-nav__leftSP div{
+  margin-left: 10px;
+}
+
+.p-nav__leftSP img{
+  width: 77px;
+  height: 77px;
+}
+
+/* middle */
+.p-nav__middleSP a{
+  display: flex;
+  margin: 16px 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+.p-nav__middleSP a:hover{
+  opacity: 0.7;
+}
+
+.p-nav__middleSP img{
+  width: 186px;
+  height: 45px;
+}
+
+.p-nav__middleSP p{
+  margin: 0;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.p-nav__rightContainer{
+  display: none;
+}
+
+/* attention */
+.p-attention__pc{
+  display: none;
+}
+
+.p-attention__sp{
+  width: 100vw;
+  background-color: white;
+  padding: 80px 10px 10px 10px;
+}
+
+.p-attention__container{
+  margin: 0 auto;  
+  border:2px solid #5d7dbf;
+  padding: 20px;
+  text-align: center;
+}
+
+.p-attention__container p{
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  font-family:  -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, 'Droid Sans', sans-serif;
+  line-height: 1.4;
+}
+
+.p-attention__pc{
+  display: none;
+}
+
+/* ピックアップ */
+/* スライダー */
+/* 内容はslick__others.cssに記載 */
+
+/* ニュース */
+.p-news{
+  margin:  0 auto;
+  padding: 65px 0 80px;
+  background-color: white;
+}
+
+.p-news__list{
+  position: absolute;
+  left: 50%;
+  top: 160px;
+  margin-left: 368px;
+}
+
+.p-news__list a{
+  display: block;
+  width: 64px;
+  height: 26px;
+  box-sizing: border-box;
+  background-color: #5d7dbf;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/* .p-news__list a::after{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+  vertical-align: middle;
+  border-radius: 50%;
+  content: "→";
+} */
+
+.p-scroll{
+  width: auto;
+  margin:7.5% 6.3% 0;
+  height: 180px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* スクロール幅の設定 */
+.p-scroll::-webkit-scrollbar{
+  width: 6px;
+}
+
+/* スクロールの背景の設定 */
+.p-scroll::-webkit-scrollbar-track{
+  background-color: #e5e5e5;
+  border-radius: 5px;
+}
+
+/* ドラックできるスクロール部の設定 */
+.p-scroll::-webkit-scrollbar-thumb{
+  background: #5d7dbf;
+  border-radius: 5px;
+}
+
+.p-scroll > li{
+  list-style: none;
+  padding: 8px 0;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-scroll > li > a:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.p-scroll > li > a{
+  display: flex;
+  letter-spacing: 0.2em;
+  flex-direction: column;
+}
+
+.p-scroll__date{
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.p-scroll__script{
+  font-size: 14px;
+}
+
+.p-scroll__news::before{
+  width: 10vw;
+  background-color: #e7a844;
+  color: white;
+  content: "ニュース";
+  height: 20px;
+  margin-right: 10px;
+  padding: 3px 10px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-scroll__recruite::before{
+  width: 12vw;
+  background-color: #ee8888;
+  color: white;
+  content: "参加者募集";
+  margin-right: 10px;
+  padding: 3px 10px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-scroll__creature::before{
+  width: 14vw;
+  background-color: #2ea0df;
+  color: white;
+  content: "生きもの情報";
+  margin-right: 10px;
+  padding: 3px 10px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ・・・ */
+/* .p-middle{
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.p-middle section{
+  width: 100vw;
+} */
+
+/* 時間・料金・アクセス */
+.p-time{
+  padding: 14vw 6.25vw;
+  background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/time.jpg");
+  background-position: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.c-blueBtn__list{
+  width: 250px;
+  background-color: #5d7dbf;
+  margin: 0px 10px 20px;
+  padding: 4.6875vw 0 6.25vw;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* 展示・館内紹介 */
+.p-exhibition{
+  padding: 130px 0px;
+  background-image: url("C:/Users/msrdi/OneDrive/ドキュメント/Portfolio1/assets/img/exibition.jpg");
+  position: relative;     
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  /* flex: 1; */
+}
+
+/* 常設展示 */
+
+/* subInformation */
+.p-subInformation{
+  padding: 14vw 6.25vw;
+  align-items: center;
+}
+
+.p-subInformation__container{
+  width: 540px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.p-subInformation > li{
+  width: 250px;
+  background-color: #f2f2f2;
+  margin: 0 10px 20px;
+  padding: 35px 0 40px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid #e4e2e2;
+  cursor: pointer;
+}
+
+/* .p-subInformation{
+  max-width: 960px;
+  padding: 90px 0;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+} */
+
+
+/* イベント&スクール */
+/* 内容はslick__others.cssに記載 */
+
+/* ブログ海遊館日記 */
+/* 内容はslick__others.cssに記載 */
+
+/* 公式SNS */
+  .p-others{
+    margin: auto;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .p-others strong{
+    min-height: 0;
+    font-size: 3.75vw;
+    letter-spacing: 0;
+    line-height: 1.4;
+  }
+  
+  .p-others > ul{
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .p-others li{
+    position: relative;
+    margin: 15px 30px;
+    padding: 26px 26px 26px 86px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #c5d0e4;
+  }
+  
+  .p-others li:hover{
+    opacity: 0.5;
+  }
+  
+  .p-others a{
+    list-style: none;
+    text-decoration: none;
+    color: #5e7dbe;
+    /* align-items: center; */
+    vertical-align: middle;
+    }
+
+  .p-others br{
+    display: none;
+  }
+
+  .p-others__title{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .p-others__img{
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .p-others__link{
+    display: none;
+  }
+  
+  .c-sitemap{
+    display: none;
+  }
+
+/* sitemap */
+.p-sitemap{
+  width: 100vw;
+  background-color: #5d7dbf;
+  padding-top: 40px;
+  line-height: 2;  
+  color: white;
+}
+
+.p-sitemap__container{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.p-sitemap__list{
+  display: none;
+  text-align: left;
+  width: 50%;
+  margin-top: 50px;
+}
+
+.p-sitemap__list > li{
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.p-sitemap__list li > ul > li{
+  margin-top: 5px;
+}
+
+.p-sitemap__list a{
+  cursor: pointer;
+}
+
+.p-sitemap__list a:hover{
+  opacity: 0.7;
+}
+
+.p-sitemap__list p{
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.p-sitemap__list img{
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+}
+
+  /* footer */
+.c-sitemap__spCover{
+  font-size: 20px;
+  background-color: #5d7dbf;
+}
+  
+.c-sitemap__sp{
+  width: 70%;
+  height: 40px;
+  text-align: right;
+  margin: 0 auto;
+  padding: 8px;
+  vertical-align: middle;
+  background-color: #fea8a8;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 28px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c-sitemap__sp p{
+position: absolute;
+top: -5px;
+left: 120px;
+}
+
+.c-sitemap__sp img{
+  position: absolute;
+  right: 100px;
+  width: 28px;
+  height: 28px;
+}
+
+/* .c-sitemap__sp p::after{
+  background-color: white;
+  color: #fea8a8;
+  content: "↓";
+  border-radius: 50%;
+  margin-left: 5px;
+  font-size: 5vw;
+  font-weight: bold;
+} */
+
+.l-footer{
+  background-color: #5d7dbf;
+  text-align: center;
+}
+
+.l-footer__container{
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.p-footer__sns{
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.p-footer__img{
+  width: 90px;
+  height: 90px;
+  margin: 0 5px;
+}
+
+.fa-brands,.fa-line{
+  width: 40px;
+  height: 40px;
+  /* margin: 0 5px; */
+}
+
+.p-footer__img:hover{
+  opacity: 0.5;
+}
+
+.p-footer__nav{
+  display:block;
+  list-style: none;
+  margin: 35px 0 25px;
+}
+
+.p-footer__nav li{
+  padding: 0 10px;
+  margin: 20px 3px;
+}
+
+.p-footer__nav a{
+  text-decoration:underline;
+  font-size: 100%;
+  color: #fff;
+}
+
+.p-footer__list:hover{
+  opacity: 0.5;
+}
+
+.l-small{
+  color: #fff;
+}
+
+}

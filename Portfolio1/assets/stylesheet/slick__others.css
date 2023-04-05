@@ -1,0 +1,206 @@
+
+.c-slick__others li:hover{
+  opacity: 0.7;
+}
+
+.c-slick__event{
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  position: relative;
+}
+  
+.c-slick__recruit{
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  position: relative;
+}
+
+.c-slick__blog{
+  text-align: left;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  position: relative;
+}
+
+/* 左右の矢印 */
+.c-slick__others >.slick-prev,
+.c-slick__others > .slick-next {
+  position: absolute;
+  z-index: 1;
+  top: 42%;
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: none; /*クリックをしたら出てくる枠線を消す*/
+  border-top: 5px solid #5d7dbf; /*矢印の色*/
+  border-right: 5px solid #5d7dbf; /*矢印の色*/
+  height: 20px;
+  width: 20px;
+}
+
+.c-slick__others > .slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: 0.5%;
+  transform: rotate(-135deg);
+}
+.c-slick__others > .slick-next {
+  /*次へ矢印の位置と形状*/
+  right: 0.5%;
+  transform: rotate(45deg);
+}
+
+.p-event{
+  background-color: #e0f1fc;
+  padding: 60px 0 90px;
+}
+
+.p-blog{
+background-color: #e0f1fc;
+padding: 0 0 60px;
+}
+
+/* PC style */
+@media screen and (min-width: 769px) {
+
+  .c-slick__others{
+    width: 960px;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  
+.c-slick__others li{
+  width: 33.3%;
+  margin:0 18px;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  color: #5471ad;
+}
+
+  .c-slick__others h3{
+    margin: 12px 0 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    position: relative;
+  }
+
+
+  .c-slick__others img{
+    width: 280px;
+    height: 160px;
+  }
+
+.c-slick__others p{
+  margin-top: 5px;
+  text-decoration: underline;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.c-slick__event::after{
+  position: absolute;
+  right: 0;
+  background-color: #ccc;
+  color: white;
+  content: "イベントレポート";
+  height: 20px;
+  margin-left: 10px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+.c-slick__recruit::after{
+  position: absolute;
+  right: 0;
+  background-color: #ee8888;
+  color: white;
+  content: "参加者募集";
+  height: 20px;
+  margin-left: 10px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.c-slick__blog::after{
+  position: absolute;
+  right: 0;
+  background-color: #ccc;
+  color: white;
+  content: "海獣チームの日記";
+  height: 20px;
+  margin-left: 10px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.c-slick__eventSP{
+  display: none;
+}
+}
+
+/* SP style */
+@media screen and (max-width: 768px){
+  .c-slick__others{
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .c-slick__others li{
+    width: 33.3%;
+    margin:0 18px;
+    list-style: none;
+    text-align:left;
+    cursor: pointer;
+    color: #5471ad;
+  }
+
+  .c-slick__others h3{
+    margin: 12px 0 5px;
+    padding: 0 10px;
+    font-size: 3.5vw;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+    position: relative;
+  }
+  
+.c-slick__others img{
+  width: 280px;
+  height: 125px;
+}
+  .c-slick__others p{
+    margin-top: 5px;
+    text-decoration: underline;
+    font-size: 2.8vw;
+    line-height: 1.8;
+  }
+
+  .c-slick__eventSP{
+    width: 150px;
+    height: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #ccc;
+    color: white;
+    content: "イベントレポート";
+  }
+/* 
+  .c-slick__eventSP::after{
+  position: absolute;
+  right: 0;
+  background-color: #ccc;
+  color: white;
+  content: "イベントレポート";
+  height: 20px;
+  margin-left: 10px;
+  padding: 0 10px;
+  font-size: 13px;
+  } */
+}
